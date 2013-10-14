@@ -18,7 +18,7 @@ It works by using the customer's email that they used to purchase your product, 
 
 To show the Gravatars of customers who have purchased your product, use the [edd_purchase_gravatars] shortcode, or drag the provided widget into the sidebar of your single download page. You can also show the gravatars of a particular product anywhere on your website using the template tag or shortcode, by passing in the download's ID.
 
-Features:
+**Features**
 
 1. Set a heading to display above the Gravatars.
 1. Set the size of each Gravatar (512px maximum)
@@ -29,7 +29,7 @@ Features:
 
 **More add-ons for Easy Digital Downloads**
 
-You can find more add-ons (both free and commercial) from Easy Digital Downloads' [https://easydigitaldownloads.com/extensions/?ref=166](website "website")
+You can find more add-ons (both free and commercial) from [Easy Digital Downloads' website](https://easydigitaldownloads.com/extensions/?ref=166 "Easy Digital Downloads")
 
 **Free theme for Easy Digital Downloads**
 
