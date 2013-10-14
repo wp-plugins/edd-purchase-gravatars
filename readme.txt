@@ -14,6 +14,8 @@ Displays Gravatars of customers who have purchased your product
 
 This plugin requires [Easy Digital Downloads](http://wordpress.org/extend/plugins/easy-digital-downloads/ "Easy Digital Downloads"). It outputs gravatars of all the customers who have purchased your product.
 
+To show the Gravatars of customers who have purchased your product, use the [edd_purchase_gravatars] shortcode, or drag the provided widget into the sidebar of your single download page.
+
 **Looking for a free theme for Easy Digital Downloads?**
 
 [http://sumobi.com/shop/shop-front/](http://sumobi.com/shop/shop-front/ "Shop Front")
@@ -34,6 +36,7 @@ Shop Front was designed to be simple, responsive and lightweight. It has only th
 1. Upload to your site
 1. Navigate to `wp-admin/plugins.php` on your site (your WP Admin plugin page)
 1. Activate this plugin
+1. Use the [edd_purchase_gravatars] shortcode or place the provided widget on your single download page
 
 OR you can just install it with WordPress by going to Plugins >> Add New >> and type this plugin's name
 
@@ -47,7 +50,10 @@ In order for the gravatars to display, "Show Avatars" must be enabled in Setting
 
 == Screenshots ==
 
-1. Coming Soon
+1. Using the [edd_purchase_gravatars] shortcode
+1. Using the widget in a theme's sidebar 
+1. The settings screen in Easy Digital Download's extension tab
+1. The widget
 
 == Changelog ==
 
