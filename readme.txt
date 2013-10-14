@@ -28,7 +28,7 @@ To show the Gravatars of customers who have purchased your product, use the [edd
 1. Randomize the Gravatars
 
 
-** Shortcode usage **
+**Shortcode usage**
 
 To show the purchase gravatars on a single download, add this shortcode into the WP editor:
 
@@ -42,7 +42,7 @@ To show the purchase gravatars with a custom title, use the title parameter. Thi
 
     [edd_purchase_gravatars title="This is my custom title"]
 
-** Template Tag usage **
+**Template Tag usage**
 
 This example will show the purchase gravatars of whichever single download it is placed on. 
 
