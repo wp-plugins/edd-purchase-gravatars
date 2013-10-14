@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Easy Digital Downloads - Purchase Gravatars
-Plugin URI: http://easydigitaldownloads.com/extension/purchase-gravatars
+Plugin URI: http://sumobi.com/shop/edd-purchase-gravatars/
 Description: Displays gravatars of customers who have purchased your product
 Version: 1.0
 Author: Andrew Munro, Sumobi
@@ -221,13 +221,11 @@ if ( ! class_exists( 'EDD_Purchase_Gravatars' ) ) {
 		*/
 		function gravatars( $download_id = false, $title = '' ) {
 
-		
-
 			// unique $payment_ids 
 			$payment_ids = $this->get_payment_ids( $download_id );
 
-		//	var_dump( $payment_ids );
-//	 var_dump( $this->get_log_ids( get_the_ID() ) );
+			//	var_dump( $payment_ids );
+			//	 var_dump( $this->get_log_ids( get_the_ID() ) );
 			
 			global $edd_options;
 
@@ -237,7 +235,6 @@ if ( ! class_exists( 'EDD_Purchase_Gravatars' ) ) {
 
 			// minimum amount of purchases before showing gravatars
 			// if the number of items in array is not greater or equal to the number specified, then exit
-			
 			if ( isset( $edd_options['edd_pg_min_purchases_required'] ) && '' != $edd_options['edd_pg_min_purchases_required'] ) {
 				if ( ! ( count( $payment_ids ) >= $edd_options['edd_pg_min_purchases_required'] ) )
 					return;

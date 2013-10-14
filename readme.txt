@@ -14,7 +14,7 @@ Displays Gravatars of customers who have purchased your product
 
 This plugin requires [Easy Digital Downloads](http://wordpress.org/extend/plugins/easy-digital-downloads/ "Easy Digital Downloads"). It outputs gravatars of all the customers who have purchased your product.
 
-It works by using the customer's email that they used to purchase your product, and checking it against Gravatar.com. Only unique email addresses are used, so if a customer purchases your procuct more than once, it will only show their Gravatar once.
+It works by using the customer's email that they used to purchase your product, and checking it against Gravatar.com. Only unique email addresses are used, so if a customer purchases your product more than once, it will only show their Gravatar once.
 
 To show the Gravatars of customers who have purchased your product, use the [edd_purchase_gravatars] shortcode, or drag the provided widget into the sidebar of your single download page. You can also show the gravatars of a particular product anywhere on your website using the template tag or shortcode, by passing in the download's ID.
 
