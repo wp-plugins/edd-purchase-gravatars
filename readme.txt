@@ -27,6 +27,39 @@ To show the Gravatars of customers who have purchased your product, use the [edd
 1. Only show customers with a Gravatar account
 1. Randomize the Gravatars
 
+
+** Shortcode usage **
+
+To show the purchase gravatars on a single download, add this shortcode into the WP editor:
+
+    [edd_purchase_gravatars]
+
+To show the purchase gravatars of a particular download on another page or download, add the id parameter. This example will show the download with an ID of 942.
+
+    [edd_purchase_gravatars id="942"]    
+
+To show the purchase gravatars with a custom title, use the title parameter. This will override the heading in the main plugin options
+
+    [edd_purchase_gravatars title="This is my custom title"]
+
+** Template Tag usage **
+
+This example will show the purchase gravatars of whichever single download it is placed on. 
+
+    $gravatars = new EDD_Purchase_Gravatars();
+    echo $gravatars->gravatars( get_the_ID() );
+
+If you'd like to show purchase gravatars of a specific download from somewhere else on your site, pass in the ID of the download like so:
+
+	$gravatars = new EDD_Purchase_Gravatars();
+    echo $gravatars->gravatars( '942' );
+
+To show a custom title, pass in your title as the 2nd parameter
+
+    $gravatars = new EDD_Purchase_Gravatars();
+    echo $gravatars->gravatars( get_the_ID(), 'This is my custom title' );  
+
+
 **More add-ons for Easy Digital Downloads**
 
 You can find more add-ons (both free and commercial) from [Easy Digital Downloads' website](https://easydigitaldownloads.com/extensions/?ref=166 "Easy Digital Downloads")
