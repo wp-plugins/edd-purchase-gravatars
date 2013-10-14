@@ -14,9 +14,24 @@ Displays Gravatars of customers who have purchased your product
 
 This plugin requires [Easy Digital Downloads](http://wordpress.org/extend/plugins/easy-digital-downloads/ "Easy Digital Downloads"). It outputs gravatars of all the customers who have purchased your product.
 
-To show the Gravatars of customers who have purchased your product, use the [edd_purchase_gravatars] shortcode, or drag the provided widget into the sidebar of your single download page.
+It works by using the customer's email that they used to purchase your product, and checking it against Gravatar.com. Only unique email addresses are used, so if a customer purchases your procuct more than once, it will only show their Gravatar once.
 
-**Looking for a free theme for Easy Digital Downloads?**
+To show the Gravatars of customers who have purchased your product, use the [edd_purchase_gravatars] shortcode, or drag the provided widget into the sidebar of your single download page. You can also show the gravatars of a particular product anywhere on your website using the template tag or shortcode, by passing in the download's ID.
+
+Features:
+
+1. Set a heading to display above the Gravatars.
+1. Set the size of each Gravatar (512px maximum)
+1. Set the minimum number of unique purchases a download must have before the Gravatars are shown. Leave blank for no minimum.
+1. Set the maximum number of gravatars to show. Leave blank for no limit.
+1. Only show customers with a Gravatar account
+1. Randomize the Gravatars
+
+**More add-ons for Easy Digital Downloads**
+
+You can find more add-ons (both free and commercial) from Easy Digital Downloads' [https://easydigitaldownloads.com/extensions/?ref=166](website "website")
+
+**Free theme for Easy Digital Downloads**
 
 [http://sumobi.com/shop/shop-front/](http://sumobi.com/shop/shop-front/ "Shop Front")
 
@@ -46,6 +61,7 @@ OR you can just install it with WordPress by going to Plugins >> Add New >> and 
 = My Gravatars are not showing =
 
 In order for the gravatars to display, "Show Avatars" must be enabled in Settings -> Discussion.
+
 
 
 == Screenshots ==
