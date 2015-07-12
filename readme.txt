@@ -3,8 +3,8 @@ Contributors: sumobi
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EFUPMPEZPGW7L
 Tags: easy digital downloads, digital downloads, e-downloads, edd, sumobi, purchase, gravatars, e-commerce
 Requires at least: 3.3
-Tested up to: 3.6
-Stable tag: 1.0
+Tested up to: 4.2.2
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,7 +36,7 @@ To show the purchase gravatars on a single download, add this shortcode into the
 
 To show the purchase gravatars of a particular download on another page or download, add the id parameter. This example will show the download with an ID of 942.
 
-    [edd_purchase_gravatars id="942"]    
+    [edd_purchase_gravatars id="942"]
 
 To show the purchase gravatars with a custom title, use the title parameter. This will override the heading in the main plugin options
 
@@ -44,7 +44,7 @@ To show the purchase gravatars with a custom title, use the title parameter. Thi
 
 **Template Tag usage**
 
-This example will show the purchase gravatars of whichever single download it is placed on. 
+This example will show the purchase gravatars of whichever single download it is placed on.
 
     $gravatars = new EDD_Purchase_Gravatars();
     echo $gravatars->gravatars( get_the_ID() );
@@ -57,8 +57,11 @@ If you'd like to show purchase gravatars of a specific download from somewhere e
 To show a custom title, pass in your title as the 2nd parameter
 
     $gravatars = new EDD_Purchase_Gravatars();
-    echo $gravatars->gravatars( get_the_ID(), 'This is my custom title' );  
+    echo $gravatars->gravatars( get_the_ID(), 'This is my custom title' );
 
+**Widget usage**
+
+Drag the widget into your sidebar. If the widget is shown on a single download page, and that download has purchases, the purchase gravatars will be shown.
 
 **More add-ons for Easy Digital Downloads**
 
@@ -72,10 +75,10 @@ Shop Front was designed to be simple, responsive and lightweight. It has only th
 
 **Stay up to date**
 
-*Become a fan on Facebook* 
+*Become a fan on Facebook*
 [http://www.facebook.com/sumobicom](http://www.facebook.com/sumobicom "Facebook")
 
-*Follow me on Twitter* 
+*Follow me on Twitter*
 [http://twitter.com/sumobi_](http://twitter.com/sumobi_ "Twitter")
 
 == Installation ==
@@ -84,7 +87,8 @@ Shop Front was designed to be simple, responsive and lightweight. It has only th
 1. Upload to your site
 1. Navigate to `wp-admin/plugins.php` on your site (your WP Admin plugin page)
 1. Activate this plugin
-1. Use the [edd_purchase_gravatars] shortcode or place the provided widget on your single download page
+1. Configure the plugin's settings from downloads -> settings -> extensions
+1. Use the included shortcode, template tag or widget.
 
 OR you can just install it with WordPress by going to Plugins >> Add New >> and type this plugin's name
 
@@ -95,16 +99,23 @@ OR you can just install it with WordPress by going to Plugins >> Add New >> and 
 
 In order for the gravatars to display, "Show Avatars" must be enabled in Settings -> Discussion.
 
+= How can I change the default avatar? =
 
+The default avatar can be changed from Settings -> Discussion. If you are a developer, there's a edd_pg_gravatar_default_image filter available to pass in any image URL.
 
 == Screenshots ==
 
 1. Using the [edd_purchase_gravatars] shortcode
-1. Using the widget in a theme's sidebar 
+1. Using the widget in a theme's sidebar
 1. The settings screen in Easy Digital Download's extension tab
 1. The widget
 
 == Changelog ==
+
+= 1.0.1 =
+* New: Added edd_pg_name filter for the image's alt tag
+* New: French translations, props fxbenard
+* Fix: Removed PHP 4 style constructors
 
 = 1.0 =
 * Initial release
